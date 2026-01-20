@@ -1,11 +1,85 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Counter from "../components/Counter";
+import Events from "../components/Events.astro";
+import Itinerary from "../components/Itinerary.astro";
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import DressCode from "../components/DressCode.astro";
+import SuggestedGifts from "../components/SuggestedGifts.astro";
+import FinalMessages from "../components/FinalMessages.astro";
+import Intro from "../components/Intro.astro";
+import RsvpForm from "../components/RsvpForm";
 ---
 
 <Layout>
-	<Welcome />
+	<main class="bg-[#141414] h-screen w-full md:py-10 overflow-hidden flex">
+		<div
+			class="bg-[url('/bg-paper.png')] max-w-sm w-full mx-auto flex flex-col h-full min-h-0 overflow-hidden"
+		>
+			<div class="flex-1 min-h-0 overflow-y-auto scrollbar-hide space-y-20 w-full">
+				<!--Encabezado -->
+				<Header />
+
+				<div class="h-[600px] mask1 overflow-hidden relative w-full">
+					<img
+						src="/01.webp"
+						alt="Pareja en boda"
+						class="absolute inset-0 h-full w-full object-cover"
+					/>
+				</div>
+
+				<!--Intro -->
+				<Intro />
+
+				<!--Contador -->
+				<div>
+					<Counter client:load />
+				</div>
+
+				<div class="relative w-full h-[450px] overflow-hidden mask1">
+					<img
+						src="/02.webp"
+						alt="Pareja en boda"
+						class="w-full h-full object-cover"
+					/>
+				</div>
+
+				<!--Eventos -->
+				<Events />
+
+				<!--Itinerario -->
+				<Itinerary />
+
+				<div class="relative w-full h-[450px] overflow-hidden mask1">
+					<img
+						src="/03.webp"
+						alt="Pareja en boda"
+						class="w-full h-full object-cover"
+					/>
+				</div>
+
+				<!--Código de vestimenta -->
+				<DressCode />
+
+				<!--Sugerencia de regalos -->
+				<SuggestedGifts />
+
+				<!--Confirmación de asistencia -->
+				<div>
+					<RsvpForm client:load />
+				</div>
+
+				<!--Mensajes finales -->
+				<FinalMessages />
+
+				<div class="relative w-full h-[450px] overflow-hidden mask2">
+					<img
+						src="/04.webp"
+						alt="Pareja en boda"
+						class="w-full h-full object-cover"
+					/>
+				</div>
+			</div>
+		</div>
+	</main>
 </Layout>

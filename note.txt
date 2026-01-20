@@ -1,0 +1,113 @@
+---
+import RingsIcon from "../assets/icons/RingsIcon.astro";
+import CheersIcon from "../assets/icons/CheersIcon.astro";
+import DinnerIcon from "../assets/icons/DinnerIcon.astro";
+import LocationIcon from "../assets/icons/LocationIcon.astro";
+import PartyIcon from "../assets/icons/PartyIcon.astro";
+---
+
+<!--Itinerario -->
+<div class="flex flex-col items-center">
+    <p class="mb-5">Itinerario de actividades</p>
+    <div class="grid grid-cols-[1fr_40px_1fr] gap-5">
+        <!-- Tomar lugar en recepción -->
+        <div></div>
+        <div class="flex justify-center">
+            <div class="h-10 w-10 flex items-center justify-center">
+                <LocationIcon />
+            </div>
+        </div>
+        <div class="text-left">
+            <p class="font-semibold tracking-widest">Tomar tu lugar</p>
+            <p class="text-sm opacity-70">20:00 p.m.</p>
+        </div>
+
+        <!--Linea vertical -->
+        <div></div>
+        <div class="flex justify-center">
+            <div class="bg-gray-300 h-10 -translate-x-1/2 text-center w-px">
+            </div>
+        </div>
+        <div></div>
+
+        <!-- Ceremonia -->
+        <div class="text-right">
+            <p class="font-semibold tracking-widest">Ceremonia</p>
+            <p class="text-sm opacity-70">20:30 p.m.</p>
+        </div>
+        <div class="flex justify-center">
+            <div
+                class="h-10 w-10 rounded-full flex items-center justify-center"
+            >
+                <RingsIcon />
+            </div>
+        </div>
+        <div></div>
+
+        <!--Linea vertical -->
+        <div></div>
+        <div class="flex justify-center">
+            <div class="bg-gray-300 h-10 -translate-x-1/2 text-center w-px">
+            </div>
+        </div>
+        <div></div>
+
+        <!-- Brindes -->
+        <div></div>
+        <div class="flex justify-center">
+            <div
+                class="h-10 w-10 rounded-full flex items-center justify-center"
+            >
+                <CheersIcon />
+            </div>
+        </div>
+        <div class="text-left">
+            <p class="font-semibold tracking-widest">Brindis</p>
+            <p class="text-sm opacity-70">21:30 p.m.</p>
+        </div>
+
+        <!--Linea vertical -->
+        <div></div>
+        <div class="flex justify-center">
+            <div class="bg-gray-300 h-10 -translate-x-1/2 text-center w-px">
+            </div>
+        </div>
+        <div></div>
+
+        <!-- Cena -->
+        <div class="text-right">
+            <p class="font-semibold tracking-widest">Cena</p>
+            <p class="text-sm opacity-70">22:30</p>
+        </div>
+        <div class="flex justify-center">
+            <div
+                class="h-10 w-10 rounded-full flex items-center justify-center"
+            >
+                <DinnerIcon />
+            </div>
+        </div>
+        <div></div>
+
+        <!--Linea vertical -->
+        <div></div>
+        <div class="flex justify-center">
+            <div class="bg-gray-300 h-10 -translate-x-1/2 text-center w-px">
+            </div>
+        </div>
+        <div></div>
+
+        <!-- Cena -->
+        <div></div>
+        <div class="flex justify-center">
+            <div
+                class="h-10 w-10 rounded-full flex items-center justify-center"
+            >
+                <PartyIcon />
+            </div>
+        </div>
+        <div class="text-left">
+            <p class="font-semibold tracking-widest">Fiesta</p>
+            <p class="text-sm opacity-70">00:00 a.m.</p>
+        </div>
+    </div>
+</div>
