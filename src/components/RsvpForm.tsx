@@ -9,7 +9,7 @@ const RsvpForm = () => {
     const day = date.getDate();
 
     const whatsappUrl =
-        "https://wa.me/51906069833?text=Hola%20😊,%20confirmo%20mi%20asistencia%20a%20la%20boda.%0A%0AAdem%C3%A1s,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20esta%20invitaci%C3%B3n.%20Gracias.";
+          "https://wa.me/51956064239?text=Hola%20😊,%20confirmo%20mi%20asistencia%20a%20la%20boda.%0A%0AAdem%C3%A1s,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20esta%20invitaci%C3%B3n.%20Gracias.";
 
 
     return (
