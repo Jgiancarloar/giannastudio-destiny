@@ -10,6 +10,7 @@ export type ItineraryItem = {
 export type EventsItem = {
   id: string;
   title: string;
+  subtitle: string;
   icon: EventIconKey;
   time: string;
   address: string;
@@ -50,19 +51,21 @@ export const eventData = {
     {
       id: "ceremony",
       title: "Ceremonia",
+      subtitle: "Parroquia Nuestra Señora del Pilar",
       icon: "church",
       time: "15:30",
-      address: "Av. Armendáriz 350, Miraflores",
-      mapUrl: "https://maps.app.goo.gl/bjHcxyFu4VKjaNrp9",
-    },
-    {
+      address: "Av. Víctor Andrés Belaunde 160, San Isidro 15073, Lima, Perú",
+      mapUrl: "https://maps.app.goo.gl/KLc1YBcFkMWVnMdA7",
+  },
+  {
       id: "party",
       title: "Fiesta",
+      subtitle: "The Westin Lima Hotel & Convention Center",
       icon: "cheers",
       time: "20:00",
-      address: "Av. Armendáriz 350, Miraflores",
-      mapUrl: "https://maps.app.goo.gl/bjHcxyFu4VKjaNrp9",
-    },
+      address: "Av. Las Begonias 450, San Isidro, Lima, Perú",
+      mapUrl: "https://maps.app.goo.gl/ew6nApbdcWG6Px3n9",
+  },
   ] satisfies EventsItem[],
 
 };

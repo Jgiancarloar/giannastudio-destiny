@@ -3,7 +3,7 @@ import { eventData } from "../data/eventData.js";
 import { eventIcons } from "../data/eventIcons.js";
 ---
 
-<section class="flex flex-col gap-10">
+<section class="flex flex-col gap-10 px-10 text-center">
     {
         eventData.events.map((item) => {
             const Icon = eventIcons[item.icon];
@@ -14,7 +14,8 @@ import { eventIcons } from "../data/eventIcons.js";
                         <Icon />
                     </div>
                     <p class="font-semibold">{item.time} Hrs.</p>
-                    <p class="font-bold mb-3 uppercase">{item.title}</p>
+                    <p class="font-medium uppercase">{item.title}</p>
+                    <p class="font-bold mb-3 uppercase">{item.subtitle}</p>
                     <a
                         href={item.mapUrl}
                         target="_blank"
